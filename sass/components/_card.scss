@@ -52,35 +52,45 @@
 
     &__picture {
         background-size: cover;
-        height: 25rem;
-        background-blend-mode: multiply;
+        height: 10rem;
         -webkit-clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 
         &-1 {
-            background-image: linear-gradient( to right bottom, rgba($color-orange-primary,0.2), rgba($color-orange-secondary,0.2)), url('../../img/nat-5.jpg');
+            background-image: linear-gradient( to right bottom, rgba($color-orange-primary,0.2), rgba($color-orange-secondary,0.2));
         }
 
         &-2 {
-            background-image: linear-gradient( to right bottom, rgba($color-medium-green,0.2), rgba($color-dark-green,0.2)), url('../../img/nat-6.jpg');
+            background-image: linear-gradient( to right bottom, rgba($color-medium-green,0.2), rgba($color-dark-green,0.2));
         }
         
         &-3 {
-            background-image: linear-gradient( to right bottom, rgba($color-blue-primary,0.2), rgba($color-blue-secondary,0.2)), url('../../img/nat-7.jpg');
+            background-image: linear-gradient( to right bottom, rgba($color-blue-primary,0.2), rgba($color-blue-secondary,0.2));
         }
     }
 
-    &__heading {
-        
+    &__header {
         text-transform: uppercase;
         color: white;
+    }
+    &__heading {
+        font-size: 2rem;
+        font-weight: 300;
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        text-align: right;
+        width: 65%;
+    }
+
+    &__org {        
         font-size: 2.8rem;
         font-weight: 300;
         position: absolute;
-        top: 12rem;
-        right: 5rem;
-        text-align: right;
-        width: 45%;
+        top: 0rem;
+        left: 0rem;
+        text-align: left;
+        width: 75%;
     }
 
     &__heading-span {
@@ -89,33 +99,41 @@
         box-decoration-break: clone;
 
         &-1{
-            background-image: linear-gradient( to right bottom, rgba($color-orange-primary,0.8), rgba($color-orange-secondary, 0.8));
+            background-image: linear-gradient( to right bottom, rgba($color-orange-primary,0.8), rgba($color-orange-secondary, 0.8));           
         }
+
         &-2 {
             background-image: linear-gradient( to right bottom, rgba($color-medium-green,0.8), rgba($color-dark-green,0.8));
         }
+
         &-3 {
             background-image: linear-gradient( to right bottom, rgba($color-blue-primary,0.8), rgba($color-blue-secondary,0.8));
         }
+
+        &-duration {
+            font-size: 2rem;
+            display: inline-block;
+        }
+
+       
     }
 
     &__details {
-        padding: 3rem;;
+        padding: 3rem;
+
         ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
 
             li {
-                text-align: center;
+                text-align: justify;
                 font-size: 1.5rem;
                 padding: 1rem;
-               
-
+        
                 &:not(:last-child) {
                     border-bottom: 2px dotted $color-light-grey;
                 }
-
             }
         }
     }

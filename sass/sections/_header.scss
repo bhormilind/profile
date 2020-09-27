@@ -38,9 +38,8 @@
   }
 
   &__profile {
+    -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    // clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 77% 85%, 0 100%, 44% 85%, 0 86%);
-    // clip-path: polygon(0 0, 100% 0, 100% 76%, 75% 77%, 0 100%, 29% 78%, 0 79%);
     width: 20rem;
     height: 20rem;  
     
