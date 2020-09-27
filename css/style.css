@@ -243,8 +243,12 @@ a:active {
   top: 2rem;
 }
 .composition__photo_p3 {
-  left: 20%;
+  left: 10%;
   top: 10rem;
+}
+.composition__photo_p4 {
+  right: 8%;
+  top: 16rem;
 }
 .composition__photo:hover {
   outline: 1rem solid #28b485;
