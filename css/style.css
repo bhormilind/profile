@@ -314,13 +314,13 @@ a:active {
   -moz-perspective: 150rem;
   perspective: 150rem;
   position: relative;
-  height: 65rem;
+  height: 70rem;
 }
 .card__side {
   position: absolute;
   top: 0;
   left: 0;
-  height: 65rem;
+  height: 70rem;
   width: 100%;
   transition: all 1s ease;
   backface-visibility: hidden;
