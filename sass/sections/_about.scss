@@ -11,7 +11,9 @@
     to right bottom,
     rgba($color-light-green, 0.8),
     rgba($color-medium-green, 0.8),
-    rgba($color-dark-green, 0.8)
+    rgba($color-dark-green, 0.8),
+    rgba($color-blue-primary, 0.8),
+    rgba($color-blue-secondary, 0.8)
   );
 
   background-clip: text;
@@ -28,7 +30,7 @@
 }
 
 .heading-tertiary{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
   }
