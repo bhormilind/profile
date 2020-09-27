@@ -7,18 +7,17 @@
 .heading-secondary {
   display: inline-block;
 
-  background: linear-gradient(
-    to right bottom,
-    rgba($color-light-green, 0.8),
-    rgba($color-medium-green, 0.8),
-    rgba($color-dark-green, 0.8),
-    rgba($color-blue-primary, 0.8),
-    rgba($color-blue-secondary, 0.8)
-  );
+  // background: linear-gradient(
+  //   to right bottom,
+  //   rgba($color-orange-primary, 0.8),
+  //   rgba($color-orange-secondary, 0.8),
+  //   rgba($color-blue-primary, 0.8)
+  // );
 
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  color: $color-orange-secondary;
   font-size: 4rem;
   transition: all 0.2s;
   text-transform: uppercase;
