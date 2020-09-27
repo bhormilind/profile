@@ -1,0 +1,30 @@
+.section-feedback {
+  padding: 11rem 0;
+  background-color: orange;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-light-green,
+    $color-medium-green,
+    $color-dark-green
+  );
+}
+
+.feedback__container {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 60%,
+      transparent 40%
+    ),
+    url('../../img/nat-10.jpg');
+
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+  border-radius: 0.3rem;
+  
+  &__form {
+    width: 60%;
+    padding: 6rem 10rem;
+  }
+}

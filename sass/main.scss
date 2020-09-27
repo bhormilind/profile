@@ -1,0 +1,60 @@
+@import "base/animation";
+
+@import "base/variables";
+@import "base/grid";
+@import "base/mixin";
+@import "sections/header";
+@import "sections/about";
+
+@import "base/utility";
+
+@import "components/buttons";
+
+@import "components/composition";
+
+@import "components/featurebox";
+@import "sections/feature";
+
+@import "sections/tours";
+@import "components/card";
+
+@import "sections/testomonial";
+@import "components/story";
+@import "components/bgvideo";
+
+@import "sections/feedback";
+@import "components/form";
+
+
+
+
+// adding universal reset;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  // transition: all 0.4s 0.2s;
+}
+
+body {
+  font-family: 'Lato', san-sarif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+  margin: 0;
+  padding: 3rem;
+  box-sizing: border-box;
+
+  /* VIMP added to add animation to the body --very suddle --must have property; */
+  transition: all 0.4s 0.2s;
+}
+
+

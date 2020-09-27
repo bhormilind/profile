@@ -1,0 +1,46 @@
+
+a {
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    }
+  
+    &:active {
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+    }
+  }
+  
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.8rem 4rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+  }
+
+  &-white {
+    color: $color-grey;
+    background-color: $color-white;
+    border-radius: 5rem;
+  }
+}
+
+
+.btn-text {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: $default-font-size;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid $color-medium-green;
+    background: $color-medium-green;
+    color: $color-white;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+    border-radius: 5rem;
+  }
+}

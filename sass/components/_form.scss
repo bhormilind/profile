@@ -1,0 +1,42 @@
+.frm {
+   
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+
+    }
+
+    &__input {
+        font-size: 1.7rem;
+        padding: 1.5rem 2rem;
+        border-radius: 3px;
+        background-color: rgba($color-white, 0.5);
+        border: none;
+        width: 90%;
+        border-bottom: 3px solid transparent;
+        display: block;
+        font-family: inherit;
+        color: $color-black;
+       
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            border-bottom: 3px solid $color-dark-green;
+
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-orange-secondary;
+        }
+    
+        &::-webkit-input-placeholder{
+            color: $color-dark-grey;
+       }
+    }
+
+    
+
+    &__label {
+        
+    }
+}

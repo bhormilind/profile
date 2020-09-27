@@ -1,0 +1,63 @@
+.story {
+    width: 75%;
+    background-color: rbga($color-white,0.8);
+    margin: 0 auto;
+    box-shadow: 0 1.5rem 2rem rgba($color-black, 0.4);
+    padding: 5rem;;
+    padding-left: 9rem;
+
+    transform: skew(-7deg);
+
+    & > * {
+        transform: skew(+7deg);
+    }
+
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        background-color: orange;
+        float: left;
+        -webkit-shape-outside:circle(45% at 50% 50%);
+        shape-outside:circle(45% at 50% 50%);
+
+        -weebkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        
+        // Do Not Use Margin with floated element...use Transform insteaD...
+        // margin-right: 7rem;
+
+        transform: translateX(-3rem) skewX(+7deg);
+    }
+
+    &_img{
+        height: 100%;
+        transform: scale(1.4);
+        transition: all 0.4s;
+        backface-visibility: hidden;
+       
+
+        &_caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 1.7rem;
+            color: $color-white;
+            transform: translate(-50%, 20%);
+            text-align: center;
+            text-transform: uppercase;
+            opacity: 0; 
+            // transition: all 0.4s;
+            backface-visibility: hidden;
+        }
+    }
+
+    &:hover &_img_caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &_img {
+        transform: scale(1);
+        filter: blur(2px) brightness(80%);
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "naturetour",
+  "version": "1.0.0",
+  "description": "A profile applications",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhormilind/AdvancedCSS.git"
+  },
+  "author": "Milind Bhor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhormilind/AdvancedCSS/issues"
+  },
+  "homepage": "https://github.com/bhormilind/AdvancedCSS#readme",
+  "devDependencies": {
+    "sass": "^1.26.11"
+  }
+}
