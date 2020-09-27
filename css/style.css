@@ -310,8 +310,9 @@ a:active {
 }
 
 .card {
-  perspective: 150rem;
+  -webkit-perspective: 150rem;
   -moz-perspective: 150rem;
+  perspective: 150rem;
   position: relative;
   height: 65rem;
 }
