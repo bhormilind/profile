@@ -22,14 +22,12 @@
 
   &__logo-box_logo {
     height: 3rem;
+    transform: scale(1.4);
+    transition: all 0.4s;
+    backface-visibility: hidden;
   }
 
   &__text-box {
-    /* position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +35,18 @@
     height: 100%;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__profile {
+    clip-path: circle(50% at 50% 50%);
+    // clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 77% 85%, 0 100%, 44% 85%, 0 86%);
+    // clip-path: polygon(0 0, 100% 0, 100% 76%, 75% 77%, 0 100%, 29% 78%, 0 79%);
+    width: 20rem;
+    height: 20rem;  
+    
+    &_img {
+      height: 100%;
+    }
   }
 }
 

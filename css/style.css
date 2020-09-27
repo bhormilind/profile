@@ -80,12 +80,11 @@
 }
 .header__logo-box_logo {
   height: 3rem;
+  transform: scale(1.4);
+  transition: all 0.4s;
+  backface-visibility: hidden;
 }
 .header__text-box {
-  /* position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +92,14 @@
   height: 100%;
   text-align: center;
   text-transform: uppercase;
+}
+.header__profile {
+  clip-path: circle(50% at 50% 50%);
+  width: 20rem;
+  height: 20rem;
+}
+.header__profile_img {
+  height: 100%;
 }
 
 .heading-primary {
