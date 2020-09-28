@@ -16,7 +16,7 @@
 
  // Default browser font size is 16px. So convert px unit to em
 
-@mixin response($breakpoint) {
+@mixin respond($breakpoint) {
 
     // 600 / 16
     @if($breakpoint == phone) {

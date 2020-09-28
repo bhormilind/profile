@@ -38,8 +38,21 @@
 }
 
 html {
+  // Default fornt Size is 16px. So set 1rem to 10px == (10/16)*100
   font-size: 62.5%;
   // transition: all 0.4s 0.2s;
+
+  @include respond(tab-land){
+    font-size: 56.25% ; //9px = 9/0.16
+  }
+
+  @include respond(tab-port){
+    font-size: 50%;   //8px = 8/16 
+  }  
+
+  @include respond(wide-scrn){
+    font-size: 75%;
+  }
 }
 
 body {
