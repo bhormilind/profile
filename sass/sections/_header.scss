@@ -12,6 +12,12 @@
 
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  }
+
   position: relative;
 
   &__logo-box {
@@ -41,9 +47,9 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     width: 20rem;
-    height: 20rem;  
-    transition: all .3s;
-    
+    height: 20rem;
+    transition: all 0.3s;
+
     &_img {
       height: 100%;
     }
@@ -53,7 +59,6 @@
   }
 }
 
-
 /* 
   .bottom {
       position: absolute;
@@ -61,4 +66,3 @@
       left: 50%;
       transform: translate(-50%, -50%);
   } */
-
