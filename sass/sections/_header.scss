@@ -42,9 +42,13 @@
     clip-path: circle(50% at 50% 50%);
     width: 20rem;
     height: 20rem;  
+    transition: all .3s;
     
     &_img {
       height: 100%;
+    }
+    &:hover {
+      transform: translateY(-2rem) scale(1.3);
     }
   }
 }
