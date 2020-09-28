@@ -626,5 +626,10 @@ body {
   /* VIMP added to add animation to the body --very suddle --must have property; */
   transition: all 0.4s 0.2s;
 }
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
