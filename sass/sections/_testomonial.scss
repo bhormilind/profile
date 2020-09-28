@@ -1,4 +1,14 @@
 .section_testomonial{
     padding: 11rem 0;
     position: relative;
+    background-image: linear-gradient(
+        to left top,
+        rgba($color-blue-secondary, 0.8),
+        rgba($color-blue-primary, 0.8),
+        rgba($color-light-green, 0.8)
+      ), url("../img/in_back_1.jpg");
+      
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

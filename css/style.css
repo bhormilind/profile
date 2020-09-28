@@ -449,6 +449,10 @@ a:active {
 .section_testomonial {
   padding: 11rem 0;
   position: relative;
+  background-image: linear-gradient(to left top, rgba(86, 67, 250, 0.8), rgba(41, 152, 255, 0.8), rgba(126, 213, 111, 0.8)), url("../img/in_back_1.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .story {
