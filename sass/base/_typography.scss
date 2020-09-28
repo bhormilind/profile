@@ -1,0 +1,66 @@
+.heading {
+  &-primary {
+    color: $color-white;
+    /* To avoid shaking in the animation apply this property; */
+    backface-visibility: hidden;
+    text-shadow: 0 1rem 2rem rgba($color-black, 0.8);
+    margin-bottom: 6rem;
+
+    &-main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 700;
+      letter-spacing: 3.5rem;
+      animation: moveToRight 2s linear;
+    }
+
+    &-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.75rem;
+      animation: moveToLeft 2s;
+    }
+  }
+
+  &-secondary {
+    display: inline-block;
+
+    // background: linear-gradient(
+    //   to right bottom,
+    //   rgba($color-orange-primary, 0.8),
+    //   rgba($color-orange-secondary, 0.8),
+    //   rgba($color-blue-primary, 0.8)
+    // );
+
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    color: $color-orange-secondary;
+    font-size: 4rem;
+    transition: all 0.2s;
+    text-transform: uppercase;
+
+    &:hover {
+      transform: scaleX(1.1) scaleY(1.5);
+      text-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    }
+  }
+
+  & -tertiary {
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &-forth {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.paragraph {
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
