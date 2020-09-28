@@ -34,7 +34,7 @@
  1800 +      : Wide screens
  */
 .row {
-  max-width: 190rem;
+  max-width: 90%;
   margin: 0 auto;
 }
 .row:not(:last-child) {
@@ -363,13 +363,13 @@ a:active {
   -moz-perspective: 150rem;
   perspective: 150rem;
   position: relative;
-  height: 70rem;
+  height: 100rem;
 }
 .card__side {
   position: absolute;
   top: 0;
   left: 0;
-  height: 70rem;
+  height: 100rem;
   width: 100%;
   transition: all 1s ease;
   backface-visibility: hidden;
