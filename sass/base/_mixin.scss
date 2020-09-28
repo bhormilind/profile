@@ -5,3 +5,41 @@
         clear: both;
     }
 }
+
+/* Phone Sizes 
+ 0 - 600     : Phone
+ 600 - 900   : Tablet -portrait
+ 900 - 1200  : Tablet Landscape
+ 1200 - 1800 : Descktop 
+ 1800 +      : Wide screens
+ */
+
+ // Default browser font size is 16px. So convert px unit to em
+
+@mixin response($breakpoint) {
+
+    // 600 / 16
+    @if($breakpoint == phone) {
+        @media (max-width:37.5em) {
+            @content;    
+        }
+    }
+
+    @if($breakpoint == tab-port){
+        @media(max-width: 56.25em) {
+            @content;
+        }
+    }
+
+    @if($breakpoint == tab-land){
+        @media(max-width: 75em){
+            @content;
+        }
+    }
+
+    @if($breakpoint == wide-scrn){
+        @media(min-width: 112.5em){
+            @content;
+        }
+    }
+}
