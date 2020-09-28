@@ -467,6 +467,9 @@ a:active {
 .story > * {
   transform: skew(7deg);
 }
+.story__text {
+  color: #fff;
+}
 .story__shape {
   width: 15rem;
   height: 15rem;
@@ -480,7 +483,7 @@ a:active {
 }
 .story_img {
   height: 100%;
-  transform: scale(1.4);
+  transform: scale(1);
   transition: all 0.4s;
   backface-visibility: hidden;
 }
@@ -501,7 +504,7 @@ a:active {
   transform: translate(-50%, -50%);
 }
 .story:hover .story_img {
-  transform: scale(1);
+  transform: scale(1.4);
   filter: blur(2px) brightness(80%);
 }
 

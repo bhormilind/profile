@@ -12,6 +12,12 @@
         transform: skew(+7deg);
     }
 
+
+  &__text {
+    color: $color-white;
+  }
+
+
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -31,7 +37,7 @@
 
     &_img{
         height: 100%;
-        transform: scale(1.4);
+        transform: scale(1);
         transition: all 0.4s;
         backface-visibility: hidden;
        
@@ -57,7 +63,7 @@
     }
 
     &:hover &_img {
-        transform: scale(1);
+        transform: scale(1.4);
         filter: blur(2px) brightness(80%);
     }
 }
