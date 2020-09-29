@@ -222,6 +222,11 @@
       width: 100%;
     }
 
+    &__price-only {
+       visibility: hidden;
+       margin-bottom: -3rem;
+    }
+
     &__price-box {
       font-weight: 300;
       margin-bottom: 1rem;
@@ -229,6 +234,7 @@
 
     &__price-value {
       font-size: 4rem;
+      margin-bottom: 2rem;
     }
   }
 }

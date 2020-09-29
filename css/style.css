@@ -618,12 +618,17 @@ a:active {
     transform: translate(0);
     width: 100%;
   }
+  .card__price-only {
+    visibility: hidden;
+    margin-bottom: -3rem;
+  }
   .card__price-box {
     font-weight: 300;
     margin-bottom: 1rem;
   }
   .card__price-value {
     font-size: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
