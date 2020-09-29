@@ -473,25 +473,25 @@ a:active {
 @media (max-width: 75em) {
   .card {
     height: 120rem;
-    -webkit-perspective: 150rem;
-    -moz-perspective: 150rem;
-    perspective: 150rem;
+    -webkit-perspective: 0;
+    -moz-perspective: 0;
+    perspective: 0;
   }
 }
 @media (max-width: 56.25em) {
   .card {
     height: 72rem;
-    -webkit-perspective: 150rem;
-    -moz-perspective: 150rem;
-    perspective: 150rem;
+    -webkit-perspective: 0;
+    -moz-perspective: 0;
+    perspective: 0;
   }
 }
 @media (max-width: 37.5em) {
   .card {
     height: 90rem;
-    -webkit-perspective: 150rem;
-    -moz-perspective: 150rem;
-    perspective: 150rem;
+    -webkit-perspective: 0;
+    -moz-perspective: 0;
+    perspective: 0;
   }
 }
 .card__side {
