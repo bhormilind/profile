@@ -5,27 +5,9 @@
 
   position: relative;
   height: 92rem;
-
-  @include respond(tab-land) {
-    height: 120rem;
-    -webkit-perspective: 0;
-    -moz-perspective: 0;
-    perspective: 0;
-    
-  }
-
-  @include respond(tab-port) {
-    height: 72rem;
-    -webkit-perspective: 0;
-    -moz-perspective: 0;
-    perspective: 0;
-  }
-
-  @include respond(phone) {
-    height: 90rem;
-    -webkit-perspective: 0;
-    -moz-perspective: 0;
-    perspective: 0;
+ 
+  @include respond(wide-scrn){
+    height: 80rem;
   }
 
   &__side {
@@ -34,6 +16,11 @@
     left: 0;
 
     height: 92rem;
+
+    @include respond(wide-scrn){
+        height: 80rem;
+      }
+
     width: 100%;
     transition: all 1s ease;
     backface-visibility: hidden;
@@ -42,18 +29,7 @@
 
     // to hide the image's (card__picture-1/-2/-3) corner going out of rounder frame border
     overflow: hidden;
-
-    @include respond(tab-land) {
-      height: 120rem;
-    }
-
-    @include respond(tab-port) {
-      height: 72rem;
-    }
-
-    @include respond(phone) {
-        height: 90rem;
-    }
+    overflow-y: auto;
 
     &--front {
       background: $color-white;
@@ -217,5 +193,43 @@
 
   &__price-value {
     font-size: 6rem;
+  }
+
+  @include respond(tab-land) {
+    height: auto;
+    overflow-y: auto;
+
+    &__side {
+      position: relative;
+      height: auto;
+      border-radius: 0.5rem;
+     
+      &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+    }
+
+    &__price-box {
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
