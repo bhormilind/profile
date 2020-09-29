@@ -408,19 +408,39 @@ a:active {
   -moz-perspective: 150rem;
   perspective: 150rem;
   position: relative;
-  height: 65rem;
+  height: 92rem;
+}
+@media (max-width: 75em) {
+  .card {
+    height: 105rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .card {
+    height: 65rem;
+  }
 }
 .card__side {
   position: absolute;
   top: 0;
   left: 0;
-  height: 65rem;
+  height: 92rem;
   width: 100%;
   transition: all 1s ease;
   backface-visibility: hidden;
   border-radius: 0.5rem;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
+}
+@media (max-width: 75em) {
+  .card__side {
+    height: 105rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .card__side {
+    height: 65rem;
+  }
 }
 .card__side--front {
   background: #fff;

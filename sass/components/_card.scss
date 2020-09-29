@@ -3,14 +3,22 @@
     -moz-perspective: 150rem;
     perspective: 150rem;
     position: relative;
-    height: 65rem;
+    height: 92rem;
+
+    @include respond(tab-land){
+        height: 105rem;
+    }
+
+    @include respond(tab-port){
+        height: 65rem;
+    }
 
     &__side {
         position: absolute;
         top: 0;
         left: 0;
        
-        height: 65rem;
+        height: 92rem;
         width: 100%;
         transition: all 1s ease;
         backface-visibility: hidden; 
@@ -19,6 +27,15 @@
 
         // to hide the image's (card__picture-1/-2/-3) corner going out of rounder frame border
         overflow: hidden;
+
+
+        @include respond(tab-land){
+            height: 105rem;
+        }
+
+        @include respond(tab-port){
+            height: 65rem;
+        }
 
 
         &--front {
