@@ -5,8 +5,8 @@
 
   position: relative;
   height: 92rem;
- 
-  @include respond(wide-scrn){
+
+  @include respond(wide-scrn) {
     height: 80rem;
   }
 
@@ -17,9 +17,9 @@
 
     height: 92rem;
 
-    @include respond(wide-scrn){
-        height: 80rem;
-      }
+    @include respond(wide-scrn) {
+      height: 80rem;
+    }
 
     width: 100%;
     transition: all 1s ease;
@@ -203,7 +203,8 @@
       position: relative;
       height: auto;
       border-radius: 0.5rem;
-     
+
+
       &--back {
         transform: rotateY(0);
       }
@@ -225,8 +226,6 @@
       font-weight: 300;
       margin-bottom: 1rem;
     }
-
-
 
     &__price-value {
       font-size: 4rem;

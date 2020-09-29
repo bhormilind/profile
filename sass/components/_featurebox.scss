@@ -16,7 +16,7 @@
         
           background-clip: text;
           -webkit-background-clip: text;
-          font-size: 5rem;
+          font-size: 4.5rem;
           display: inline-block;
           color: transparent;
           
@@ -25,7 +25,7 @@
         }
 
         @include respond(tab-port){
-            font-size: 5rem;
+            font-size: 4.5rem;
         }
           
     }
