@@ -20,6 +20,14 @@
           display: inline-block;
           color: transparent;
           
+          @include respond(tab-land){
+            font-size: 3.4rem;
+        }
+
+        @include respond(tab-port){
+            font-size: 5rem;
+        }
+          
     }
 
     &__text {
