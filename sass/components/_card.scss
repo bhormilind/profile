@@ -8,6 +8,9 @@
 
   @include respond(tab-land) {
     height: 120rem;
+    -webkit-perspective: 150rem;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
     
   }
 
@@ -20,6 +23,9 @@
 
   @include respond(phone) {
     height: 90rem;
+    -webkit-perspective: 150rem;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
   }
 
   &__side {
