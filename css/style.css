@@ -485,7 +485,7 @@ a:active {
 }
 @media (max-width: 37.5em) {
   .card {
-    height: 140rem;
+    height: 90rem;
   }
 }
 .card__side {
@@ -512,7 +512,7 @@ a:active {
 }
 @media (max-width: 37.5em) {
   .card__side {
-    height: 140rem;
+    height: 90rem;
   }
 }
 .card__side--front {
