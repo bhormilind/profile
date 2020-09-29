@@ -8,8 +8,16 @@
 
     transform: skew(-7deg);
 
+    @include respond(tab-port){
+        transform: skew(0deg);
+    }
+
     & > * {
         transform: skew(+7deg);
+        
+        @include respond(tab-port){
+            transform: skew(0deg);
+        }
     }
 
 

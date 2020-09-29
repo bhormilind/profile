@@ -583,8 +583,18 @@ a:active {
   padding-left: 9rem;
   transform: skew(-7deg);
 }
+@media (max-width: 56.25em) {
+  .story {
+    transform: skew(0deg);
+  }
+}
 .story > * {
   transform: skew(7deg);
+}
+@media (max-width: 56.25em) {
+  .story > * {
+    transform: skew(0deg);
+  }
 }
 .story__text {
   color: #fff;
