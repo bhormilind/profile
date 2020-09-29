@@ -412,12 +412,12 @@ a:active {
 }
 @media (max-width: 75em) {
   .card {
-    height: 105rem;
+    height: 120rem;
   }
 }
 @media (max-width: 56.25em) {
   .card {
-    height: 65rem;
+    height: 72rem;
   }
 }
 .card__side {
@@ -434,12 +434,12 @@ a:active {
 }
 @media (max-width: 75em) {
   .card__side {
-    height: 105rem;
+    height: 120rem;
   }
 }
 @media (max-width: 56.25em) {
   .card__side {
-    height: 65rem;
+    height: 72rem;
   }
 }
 .card__side--front {
@@ -482,24 +482,15 @@ a:active {
 .card__header {
   text-transform: uppercase;
   color: white;
-}
-.card__heading {
   font-size: 2rem;
   font-weight: 300;
-  position: absolute;
-  top: 3rem;
-  right: 1rem;
-  text-align: right;
-  width: 65%;
 }
-.card__org {
-  font-size: 2.8rem;
-  font-weight: 300;
+.card__heading {
   position: absolute;
-  top: 0rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
   text-align: left;
-  width: 75%;
+  width: 95%;
 }
 .card__heading-span {
   padding: 1rem 1.5rem;
@@ -516,8 +507,9 @@ a:active {
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8));
 }
 .card__heading-span-duration {
-  font-size: 2rem;
   display: inline-block;
+  font-weight: 300;
+  font-family: inherit;
 }
 .card__details {
   padding: 3rem;

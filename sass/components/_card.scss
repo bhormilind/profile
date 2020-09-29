@@ -6,11 +6,11 @@
     height: 92rem;
 
     @include respond(tab-land){
-        height: 105rem;
+        height: 120rem;
     }
 
     @include respond(tab-port){
-        height: 65rem;
+        height: 72rem;
     }
 
     &__side {
@@ -30,11 +30,11 @@
 
 
         @include respond(tab-land){
-            height: 105rem;
+            height: 120rem;
         }
 
         @include respond(tab-port){
-            height: 65rem;
+            height: 72rem;
         }
 
 
@@ -90,25 +90,16 @@
     &__header {
         text-transform: uppercase;
         color: white;
-    }
-    &__heading {
         font-size: 2rem;
         font-weight: 300;
-        position: absolute;
-        top: 3rem;
-        right: 1rem;
-        text-align: right;
-        width: 65%;
     }
-
-    &__org {        
-        font-size: 2.8rem;
-        font-weight: 300;
+    &__heading {
+        
         position: absolute;
-        top: 0rem;
-        left: 0rem;
+        top: 0;
+        left: 0;
         text-align: left;
-        width: 75%;
+        width: 95%;
     }
 
     &__heading-span {
@@ -129,8 +120,9 @@
         }
 
         &-duration {
-            font-size: 2rem;
             display: inline-block;
+            font-weight: 300;
+            font-family: inherit;
         }
 
        
