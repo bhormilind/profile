@@ -585,6 +585,7 @@ a:active {
 }
 @media (max-width: 56.25em) {
   .story {
+    width: 95%;
     transform: skew(0deg);
   }
 }
@@ -599,6 +600,12 @@ a:active {
 .story__text {
   color: #fff;
 }
+@media (max-width: 56.25em) {
+  .story__text {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
 .story__shape {
   width: 15rem;
   height: 15rem;
@@ -609,6 +616,11 @@ a:active {
   -weebkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(7deg);
+}
+@media (max-width: 56.25em) {
+  .story__shape {
+    transform: skew(0deg);
+  }
 }
 .story_img {
   height: 100%;
