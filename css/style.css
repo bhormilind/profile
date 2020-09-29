@@ -283,13 +283,20 @@ a:active {
   position: relative;
 }
 .composition__photo {
-  width: 55%;
+  width: 45%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
   position: absolute;
   border: 1px solid #777;
   padding: 0.5rem;
   transition: all 0.2s;
+}
+@media (max-width: 75em) {
+  .composition__photo {
+    display: inline-block;
+    width: 100%;
+    margin-right: 4rem;
+  }
 }
 .composition__photo_p1 {
   left: 0;
@@ -299,13 +306,30 @@ a:active {
   right: 0;
   top: 2rem;
 }
+@media (max-width: 75em) {
+  .composition__photo_p2 {
+    top: 10rem;
+  }
+}
 .composition__photo_p3 {
   left: 10%;
   top: 10rem;
 }
+@media (max-width: 75em) {
+  .composition__photo_p3 {
+    left: 0;
+    top: 20rem;
+  }
+}
 .composition__photo_p4 {
   right: 8%;
   top: 16rem;
+}
+@media (max-width: 75em) {
+  .composition__photo_p4 {
+    right: 0;
+    top: 30rem;
+  }
 }
 .composition__photo:hover {
   outline: 1rem solid #28b485;

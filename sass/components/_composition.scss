@@ -2,32 +2,49 @@
     position: relative;
 
     &__photo {
-        width: 55%;
+        width: 45%;
         box-shadow: 0 1.5rem 4rem rgba($color-black,0.5);
         border-radius: 1rem;
         position: absolute;
         border: 1px solid $color-grey;
         padding: .5rem;;
         transition: all .2s;
+
+        @include respond(tab-land){
+            display: inline-block;
+            width: 100%;
+            margin-right: 4rem;;
+        }
       
         &_p1 {
             left: 0;
-            top: -2rem;
+            top: -2rem;            
         }
 
         &_p2 {
             right: 0;
             top: 2rem;
+            @include respond(tab-land){
+                top: 10rem;
+            }
         }
 
         &_p3 {
             left: 10%;
             top: 10rem;
+            @include respond(tab-land){
+                left: 0;
+                top: 20rem;
+            }
         }
 
         &_p4 {
             right: 8%;
             top: 16rem;
+            @include respond(tab-land){
+               right: 0;
+               top: 30rem;
+            }
         }
 
         &:hover {
