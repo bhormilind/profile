@@ -478,6 +478,14 @@ a:active {
 @media (max-width: 56.25em) {
   .card {
     height: 72rem;
+    -webkit-perspective: 150rem;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .card {
+    height: 140rem;
   }
 }
 .card__side {
@@ -500,6 +508,11 @@ a:active {
 @media (max-width: 56.25em) {
   .card__side {
     height: 72rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .card__side {
+    height: 140rem;
   }
 }
 .card__side--front {
