@@ -787,7 +787,7 @@ a:active {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   margin: 0;
 }
-.contacts > a {
+.contacts__icons {
   color: #ff7730;
   text-decoration: none;
   font-size: 3rem;
