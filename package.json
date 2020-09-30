@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/bhormilind/AdvancedCSS#readme",
   "devDependencies": {
-    "sass": "^1.26.11"
+    "sass": "^1.26.11",
+    "minify": "^6.0.0"
   }
 }
