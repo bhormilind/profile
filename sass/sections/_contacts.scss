@@ -1,0 +1,31 @@
+.contacts{
+      position: fixed;
+      top: 38%;
+      right: 0%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      width: 5rem;
+      height: auto;
+      background-color: $color-gray-primay;
+    
+      -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      
+      
+      margin: 0;
+      & > a {
+         color: $color-orange-secondary;
+         text-decoration: none;
+         font-size: 3rem;
+         text-align: center;
+        //  margin-right: 1.5rem;
+        margin-right:  0.8rem;
+            
+        
+        display: block;
+    
+      }
+
+      
+  } 
+  
