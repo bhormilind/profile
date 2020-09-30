@@ -1,6 +1,6 @@
 .contacts {
   position: fixed;
-  top: 30%;
+  top: 22%;
   right: 0%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -11,6 +11,9 @@
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
+  @include respond(tab-port) {
+      top:15%;
+  }
   margin: 0;
   &__icons {
     color: $color-orange-secondary;

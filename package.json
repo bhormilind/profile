@@ -4,7 +4,8 @@
   "description": "A profile applications",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/style.css --watch"
+    "compile:sass": "sass sass/main.scss css/style.css --watch",
+    "minifycss": "css/style.css"
   },
   "repository": {
     "type": "git",
