@@ -9,15 +9,7 @@
       rgba($color-dark-green, 0.8)
     ),
     url('../img/in_back_12.jpg');
-
-  @include respond(tab-port) {
-    background-image: linear-gradient(
-      to left top,
-      rgba($color-light-green, 0.8),
-      rgba($color-medium-green, 0.8),
-      rgba($color-dark-green, 0.8)
-    );
-  }
+    
   background-size: cover;
   transform: skewY(-5deg);
 
