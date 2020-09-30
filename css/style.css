@@ -436,6 +436,11 @@ a:active {
   background-size: cover;
   transform: skewY(-5deg);
 }
+@media (max-width: 56.25em) {
+  .section-features {
+    background-image: linear-gradient(to left top, rgba(126, 213, 111, 0.8), rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
+  }
+}
 .section-features > * {
   transform: skewY(5deg);
 }
@@ -632,6 +637,11 @@ a:active {
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media (max-width: 56.25em) {
+  .section_testomonial {
+    background-image: linear-gradient(to left top, rgba(86, 67, 250, 0.8), rgba(41, 152, 255, 0.8), rgba(126, 213, 111, 0.8));
+  }
 }
 @media (max-width: 56.25em) {
   .section_testomonial {
