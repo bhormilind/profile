@@ -793,9 +793,9 @@ a:active {
   width: 5rem;
   height: auto;
   background-color: #272525;
+  margin: 0;
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-  margin: 0;
 }
 @media (max-width: 56.25em) {
   .contacts {
@@ -808,7 +808,11 @@ a:active {
   font-size: 3rem;
   text-align: center;
   margin-right: 0.8rem;
+  margin-top: 0.5rem;
   display: block;
+}
+.contacts__icons:not(:last-child) {
+  border-bottom: 0.1rem solid #fff;
 }
 
 .section-footer {

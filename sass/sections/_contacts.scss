@@ -7,20 +7,26 @@
   width: 5rem;
   height: auto;
   background-color: $color-gray-primay;
+  margin: 0;
 
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
   @include respond(tab-port) {
-      top:15%;
+    top: 15%;
   }
-  margin: 0;
+ 
   &__icons {
     color: $color-orange-secondary;
     text-decoration: none;
     font-size: 3rem;
     text-align: center;
     margin-right: 0.8rem;
+    margin-top: 0.5rem;
     display: block;
+
+    &:not(:last-child) {
+      border-bottom: 0.1rem solid $color-white;
+    }
   }
 }
