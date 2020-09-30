@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass sass/main.scss css/style.css --watch",
-    "minifycss": "css/style.css"
+    "minifycss": "minify css/style.css > css/style.min.css"
   },
   "repository": {
     "type": "git",
